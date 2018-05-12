@@ -1,4 +1,4 @@
-# Docker Registry
+# docker-registry
 
 I use the "pwd" command because a bug when the bind of path is called for "yml" file.
 Create a path /opt/registry
