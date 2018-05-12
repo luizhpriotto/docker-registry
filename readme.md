@@ -30,3 +30,16 @@ If necessary, configure the S.O. to accept the CA:
 <pre>#cp /etc/registry/certs/gsorganizationvalsha2g2r1.cer /etc/pki/ca-trust/source/anchors/
 #update-ca-trust
 #systemctl restart docker</pre>
+
+# Use Docker Registry
+
+Log in the private registry:
+<pre>#docker login registry.domain.com</pre>
+
+Tag a Image:
+<pre>docker tag c92568032ea9 registry.domain.com/wordpress_example:latest</pre>
+
+Now, Push:
+<pre>docker push registry.castrolanda.coop.br/wordpress_example:latest</pre>
+
+Success?
